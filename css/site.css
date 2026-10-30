@@ -261,3 +261,8 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .pzb-g1 .pzb tbody{background:#eaf3ed}
 @media screen and (max-width:759px){.pzb-h{font-size:16px}}
 @media print{.pzb-h{font-size:10.5px;padding:0 4px}.pzb thead th{border-bottom:1px solid #000}}
+.om-pz-top{border-bottom:1.5px solid #444;padding:1px 0 3px;margin:0 0 5px}
+.om-pz-top .om-n b{font-size:1.05em}
+.pzy-byo{margin-bottom:6px}.pzy-byo .om-x{margin:1px 0 2px}
+.pzy-spec .pzb-h{margin-bottom:0}
+.om-pz-top2{border-top:1.5px solid #444;padding-top:3px;margin-top:2px}
