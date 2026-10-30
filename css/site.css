@@ -212,8 +212,6 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .om-pz-d{display:block;color:#666;font-size:.82em;line-height:1.2}
 .om-pz tbody td{text-align:right;font-weight:700;font-size:.86em;padding:3px 2px 2px 0;white-space:nowrap;letter-spacing:-.02em}
 .om-pz tbody tr{border-bottom:1px dotted #bbb}
-.om-pz .om-pz-first{border-left:2px solid #fff}
-.om-pz tbody td.om-pz-first{border-left:1px solid #d5d5d5}
 .om-pz-note{font-size:.84em;color:#555;font-style:italic;margin:1px 0 4px}
 .om-pz-sub{background:#f6f6f6;border:1px solid #e3e3e3;border-radius:4px;padding:4px 6px;margin-top:2px}
 .om-pz-x{margin-bottom:4px}
@@ -226,6 +224,14 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 @media print{.om-cols{grid-template-columns:1.5fr 1fr 1fr}}
 .om-pz-x col.om-pz-name{width:52%}.om-pz-x tbody td{font-size:1em;font-weight:800}.om-pz-x thead tr th{text-align:center}
 .om-pz-x .om-pz-d,.om-pz .om-pz-d{font-weight:400}
-@media screen and (min-width:760px){.om-pz col.om-pz-name{width:28%}.om-pz-x col.om-pz-name{width:52%}}
+@media screen and (min-width:760px){.om-pz col.om-pz-name{width:24%}.om-pz-x col.om-pz-name{width:52%}}
 .om-pz-m{display:none}
 @media screen and (max-width:759px){.om-pz-wrap,.om-pz-dollar{display:none}.om-pz-m{display:block}.om-pz-m .om-pz-x{margin-bottom:6px}.om-pz-m .om-pz-x thead th:first-child{font-size:1em}}
+/* pizza grid: crust groups separated by dark vertical rules (survive B&W print) + light tint on the middle group */
+.om-pz-wrap .om-pz .om-pz-first{border-left:1.5px solid #444}
+.om-pz-wrap .om-pz th.om-pz-crust{border-left:1.5px solid #444;border-right:0}
+.om-pz-wrap .om-pz .om-pz-g1:not(.om-pz-crust){background:#eaf3ed}
+.om-pz-wrap .om-pz tbody td{padding-right:3px}
+.om-pz-wrap .om-pz thead tr+tr th{padding-right:3px}
+.om-pz-wrap .om-pz .om-pz-crust.om-pz-g1{background:#0f4a28}
+@media print{.om-pz-wrap .om-pz .om-pz-first{border-left:1.2px solid #000}}
