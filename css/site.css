@@ -238,12 +238,7 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 /* pizza layout previews B / C */
 .om-preview{background:var(--yellow);border:1px solid #c9a700;border-radius:6px;padding:6px 10px;font-weight:800;margin:14px 0 0}
 @media print{.om-page .om-preview{display:none}}
-.pzb-card{border:1.5px solid #444;border-radius:4px;margin:0 0 5px;overflow:hidden}
 .pzb{margin:0}
-.pzb thead th{border-bottom:2px solid var(--green);font-size:.86em;text-align:right;padding-right:6px}
-.pzb thead th.pzb-crust{background:var(--green);color:#fff;text-align:left;font-family:Limelight,Georgia,serif;font-weight:400;font-size:1.05em;padding:2px 6px;border-bottom:0;vertical-align:middle}
-.pzb thead th:not(.pzb-crust){background:#e6efe9}
-.pzb-g1 .pzb thead th.pzb-crust{background:#0f4a28}
 .pzb-g1 tbody{background:#eaf3ed}
 .pzb tbody th{padding-left:6px}
 .pzb tbody td{text-align:right;padding-right:6px;font-weight:800}
@@ -258,3 +253,11 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .pzc thead th{text-align:right;padding-right:6px}.pzc thead th:first-child{text-align:left}
 .pzc tbody tr{border-bottom:1px dotted #ccc}
 .om-pz.pzb col.om-pz-name,.om-pz.pzc col.om-pz-name{width:40%}
+/* pizza layout B (live /menu/): crust titles look like the section banners, slightly smaller */
+.pzb-card{margin:0 0 6px}
+.pzb-h{font-family:Limelight,Georgia,serif;font-weight:400;font-size:14px;line-height:1.25;color:#fff;background:var(--red);text-align:center;margin:0;padding:1px 6px;border-radius:3px}
+.pzb thead th{font-size:.82em;font-weight:700;text-align:right;padding:1px 6px 1px 0;border-bottom:1.5px solid #444;line-height:1.1}
+.pzb thead th .om-sw{display:inline;font-size:1em;color:#555;margin-right:3px}
+.pzb-g1 .pzb tbody{background:#eaf3ed}
+@media screen and (max-width:759px){.pzb-h{font-size:16px}}
+@media print{.pzb-h{font-size:10.5px;padding:0 4px}.pzb thead th{border-bottom:1px solid #000}}
