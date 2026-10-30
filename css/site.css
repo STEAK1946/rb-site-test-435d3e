@@ -283,3 +283,13 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .om-has-sauce .om-n{white-space:nowrap}
 @media screen and (max-width:759px){.om-has-sauce .om-p{display:flex;flex-direction:column;align-items:flex-end;line-height:1.2}.om-has-sauce .om-sauce{order:2;margin:0;font-size:.8em}}
 @media screen and (max-width:759px){.om-has-sauce .om-sauce{white-space:nowrap}}
+/* Sandwiches add-ons list (Sam, 2026-10-30) */
+.om-adds{margin-top:4px}
+.om-adds-h{margin:2px 0 0;text-align:center;font-weight:700;font-size:.9em;color:var(--green)}
+.om-adds .om-adds-l{margin-top:1px}
+.om-adds .om-adds-l{columns:auto;column-width:128px}
+.om-adds .om-adds-l li{white-space:nowrap}
+#om-sandwiches .om-n{white-space:nowrap}
+.om-nw{white-space:nowrap}
+.om-adds .om-adds-l{columns:2;column-gap:6px}
+@media print{.om-adds .om-adds-l{font-size:.86em}}
