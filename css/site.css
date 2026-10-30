@@ -277,3 +277,9 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .pzy-spec .om-pz-top2 .om-pz-dl{text-align:left}
 @media print{.pzy-tops{font-size:.92em;line-height:1.25}.pzc tbody.pzc-p{border-top:1.2px solid #000}.pzc thead th{border-bottom-color:#000}}
 .pzy-dd{display:block;font-weight:400;font-style:italic;color:#555;font-size:.82em;line-height:1.15}
+/* Wings: sauce choices inline, toward the price */
+.om-has-sauce .om-p{white-space:normal}
+.om-sauce{font-weight:400;font-size:.86em;color:#333;margin-right:6px}
+.om-has-sauce .om-n{white-space:nowrap}
+@media screen and (max-width:759px){.om-has-sauce .om-p{display:flex;flex-direction:column;align-items:flex-end;line-height:1.2}.om-has-sauce .om-sauce{order:2;margin:0;font-size:.8em}}
+@media screen and (max-width:759px){.om-has-sauce .om-sauce{white-space:nowrap}}
