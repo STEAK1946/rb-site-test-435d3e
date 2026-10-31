@@ -335,3 +335,10 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .om-sides-h{margin-top:3px}
 .om-subh{font-weight:700;font-size:.9em;color:var(--green)}
 .om-bev{margin:-1px 0 2px}
+/* Detailed menu (Sam, 2026-10-31): Wings sauces beside the Boneless price; burgers' shared toppings line */
+.item-top .fsauce{font-weight:400;font-size:.9rem;color:#333;margin-left:auto}
+.item-top.has-sauce{flex-wrap:wrap;align-items:baseline}
+@media (max-width:759px){.item-top.has-sauce .fsauce{order:3;flex-basis:100%;margin:2px 0 0}}
+.full-sub{margin:4px 0 8px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.item-top.has-sauce .item-name{white-space:nowrap}
