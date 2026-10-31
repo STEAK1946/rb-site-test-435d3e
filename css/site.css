@@ -330,3 +330,4 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 @media screen and (max-width:759px){.om-2c{grid-template-columns:1fr}.om-2c>div+div>.om-colh{display:none}}
 @media print{.om-pv-l1 .om{font-size:8px}}
 @media print{.om-lay-l1 .om-sec{margin-bottom:3px;padding-bottom:2px}.om-pv-l1 .om-foot-l{margin-top:2px}}
+#om-char-broiled-burgers .om-colh{margin-top:2px}
