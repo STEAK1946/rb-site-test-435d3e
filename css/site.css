@@ -302,3 +302,31 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .om-phone-only{display:none}
 @media screen and (max-width:759px){.om-phone-only{display:block}.om-desk-only{display:none}}
 @media print{.om-noprint{display:none!important}.om-print-show{display:block!important}}
+/* ---- Full-page layout previews (Sam, 2026-10-30) ---- */
+.om-subcols{display:grid;grid-template-columns:1fr;gap:0 14px}
+/* Layout 1: two wide columns of section cards */
+.om-lay-l1 .om-sec{border:1.5px solid #222;border-radius:8px;padding:0 10px 6px;margin:0 0 10px;overflow:hidden}
+.om-lay-l1 .om-sec h2{margin:0 -10px 6px;border-radius:0}
+@media (min-width:760px){.om-cols.om-lay-l1{grid-template-columns:1fr 1fr;gap:0 16px}}
+/* Layout 2: poster, pizza over two compact columns at left, two columns at right */
+@media (min-width:760px){.om-cols.om-lay-l2{grid-template-columns:2fr 1fr 1fr;gap:0 14px}.om-lay-l2 .om-subcols{grid-template-columns:1fr 1fr}}
+.om-lay-l2 .om-sec h2{text-align:left;padding-left:8px}
+@media print{
+ .om-cols.om-lay-l1{grid-template-columns:1fr 1fr;gap:0 10px}
+ .om-lay-l1 .om-sec{border-width:1px;padding:0 6px 3px;margin-bottom:5px;break-inside:avoid}
+ .om-lay-l1 .om-sec h2{margin:0 -6px 3px}
+ .om-cols.om-lay-l2{grid-template-columns:2fr 1fr 1fr;gap:0 10px}.om-lay-l2 .om-subcols{grid-template-columns:1fr 1fr;gap:0 10px}
+ .om-pv-l1 .om{font-size:8.3px}.om-pv-l2 .om{font-size:8.3px}
+}
+/* Layout 1: short list sections run in two columns inside their card */
+.om-lay-l1 :is(#om-appetizers,#om-chicago-style-hot-dogs,#om-desserts,#om-beverages){columns:2;column-gap:16px}
+.om-lay-l1 :is(#om-appetizers,#om-chicago-style-hot-dogs,#om-desserts,#om-beverages) h2{column-span:all}
+.om-lay-l1 .om-i,.om-lay-l1 .om-x{break-inside:avoid}
+@media screen and (max-width:759px){.om-lay-l1 :is(#om-appetizers,#om-chicago-style-hot-dogs,#om-desserts,#om-beverages){columns:1}}
+/* Layout 2: narrow columns, so Wings sauce choices sit under the price */
+.om-lay-l2 .om-has-sauce .om-p{display:flex;flex-direction:column;align-items:flex-end;line-height:1.2}
+.om-lay-l2 .om-has-sauce .om-sauce{order:2;margin:0;white-space:nowrap;font-size:.8em}
+.om-2c{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+@media screen and (max-width:759px){.om-2c{grid-template-columns:1fr}.om-2c>div+div>.om-colh{display:none}}
+@media print{.om-pv-l1 .om{font-size:8px}}
+@media print{.om-lay-l1 .om-sec{margin-bottom:3px;padding-bottom:2px}.om-pv-l1 .om-foot-l{margin-top:2px}}
