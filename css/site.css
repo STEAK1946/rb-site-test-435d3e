@@ -293,3 +293,6 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .om-nw{white-space:nowrap}
 .om-adds .om-adds-l{columns:2;column-gap:6px}
 @media print{.om-adds .om-adds-l{font-size:.86em}}
+/* Delicious BBQ (Sam, 2026-10-30) */
+.om-sub{margin:0 0 3px;text-align:center;font-style:italic;font-size:.88em;color:#444}
+.om-bbqh{margin-top:3px}
