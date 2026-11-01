@@ -414,12 +414,3 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 @media (max-width:699px){.hero:has(.hero-steak) .hero-steak{height:auto;min-height:0;max-height:none;aspect-ratio:4/3;object-position:50% 45%;opacity:1}
  .hero:has(.hero-steak) .hero-text{position:static;padding-top:14px;padding-bottom:22px}
  .hero:has(.hero-steak)::after{display:none}}
-/* Steak-first strip on main pages (Sam, 2026-11-01) */
-.steak-strip{background:#fff6f0;border-bottom:3px solid var(--red);padding:12px 0;margin-bottom:18px}
-.steak-row{display:flex;gap:18px;align-items:center}
-.steak-img{width:260px;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px;border:3px solid #1b1b1b;flex:none}
-.steak-h{font-family:Limelight,Georgia,serif;color:var(--red);margin:0 0 4px;font-size:1.6rem;line-height:1.15}
-.steak-p{margin:0 0 10px;font-weight:700}
-.steak-btns{display:flex;gap:10px;flex-wrap:wrap}
-@media (max-width:699px){.steak-row{gap:12px;align-items:flex-start}.steak-img{width:120px}.steak-h{font-size:1.2rem}.steak-p{font-size:.92rem;margin-bottom:8px}.steak-btns .btn{padding:8px 12px;font-size:.9rem}}
-@media print{.steak-strip{display:none!important}}
