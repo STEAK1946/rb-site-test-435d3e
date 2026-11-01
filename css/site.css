@@ -414,3 +414,8 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 @media (max-width:699px){.hero:has(.hero-steak) .hero-steak{height:auto;min-height:0;max-height:none;aspect-ratio:4/3;object-position:50% 45%;opacity:1}
  .hero:has(.hero-steak) .hero-text{position:static;padding-top:14px;padding-bottom:22px}
  .hero:has(.hero-steak)::after{display:none}}
+
+/* Banner text links to the USA TODAY article on /menu/full-preview/ (Sam, 2026-11-01): same color, subtle underline */
+.tri-h-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.55)}
+.tri-h-link:hover,.tri-h-link:focus-visible{text-decoration-color:currentColor;text-decoration-thickness:2px}
+.tri-h-link:focus-visible{outline:2px solid #fff;outline-offset:3px}
