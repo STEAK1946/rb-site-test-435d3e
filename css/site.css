@@ -342,3 +342,66 @@ h1{font-size:clamp(2rem,6vw,3.4rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem)} h3{f
 .full-sub{margin:4px 0 8px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .item-top.has-sauce .item-name{white-space:nowrap}
+/* Detailed menu Sandwiches feature preview (Sam, 2026-10-31) */
+.fpv{display:block!important}
+.fsw-feat{border:3px solid var(--red,#b5121b);border-radius:10px;background:#fff6f0;padding:14px 18px;margin:12px 0 14px;text-align:center}
+.fsw-ft{font-size:2rem;margin:0;line-height:1.1;color:var(--red)}
+.fsw-fd{margin:4px 0 8px;color:#444;font-size:1rem}
+.fsw-fps{margin:0;display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:1.25rem}
+.fsw-fl{color:#2e6b30;font-weight:700;font-size:.95rem}
+.fsw-lists{display:grid;grid-template-columns:1fr;column-gap:36px}
+.fsw-list{list-style:none;margin:0;padding:0}
+.fsw-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:5px 0;border-bottom:1px dotted #ccc}
+.fsw-h{border-bottom:0;padding-bottom:0;color:#2e6b30;font-weight:700;font-size:.9rem}
+.fsw-n{min-width:0}
+.fsw-d{color:#555;font-size:.9rem;font-weight:400;margin-left:4px}
+.fsw-p{display:flex;flex:none;font-weight:800}
+.fsw-c{width:68px;text-align:right}
+.fsw-extras{display:grid;grid-template-columns:1fr;gap:18px;margin-top:16px;align-items:start}
+.fsw-box{background:#fafafa;border:1px solid #e3e3e3;border-radius:8px;padding:10px 14px}
+.fsw-bt{font-size:1.05rem;margin:0 0 6px}
+.fsw-box .grid{max-width:none;margin:0}
+@media (max-width:759px){.fsw-list2 .fsw-h{display:none}.fsw-c{width:66px}.fsw-d{display:block;margin:0}}
+@media (min-width:760px){.fsw-lists,.fsw-extras{grid-template-columns:1fr 1fr}}
+/* (Sam, 2026-10-31) Sandwiches preview, modeled on the old printed menu: dark photo frame on top, one centered list */
+.fsw-feat{max-width:720px;margin-left:auto;margin-right:auto;padding-top:16px}
+.fsw-photo{background:#1b1b1b;padding:10px;border-radius:8px;max-width:520px;margin:0 auto 12px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.fsw-photo .ph-block{max-height:none;border-color:#777;border-radius:4px}
+.fsw-lists{display:block;max-width:720px;margin:0 auto}
+@media (min-width:760px){.fsw-lists{grid-template-columns:none}}
+.fsw-extras{max-width:960px;margin-left:auto;margin-right:auto}
+/* Detailed menu tri-fold preview (Sam, 2026-10-31): modeled on the printed tri-fold */
+.tri-wrap{max-width:1320px}
+.tri{display:grid;grid-template-columns:1fr;gap:22px;margin-top:14px}
+.tri-p{min-width:0}
+.tri-sec{margin:0 0 18px}
+.tri-h{font-family:Limelight,Georgia,serif;font-size:1.25rem;color:#fff;background:var(--red);text-align:center;margin:0 0 6px;padding:4px 8px;border-radius:4px;line-height:1.25}
+.tri .tr{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:4px 0;border-bottom:1px dotted #ccc}
+.tri .th{border-bottom:0;padding:4px 0 0;color:var(--green);font-weight:800;font-size:.85rem}
+.tri .tn{min-width:0}
+.tri .td{display:block;color:#555;font-size:.88rem;font-weight:400}
+.tri .tp{display:flex;flex:none;font-weight:800}
+.tri .tc{min-width:62px;text-align:right}
+.tri .tx{font-size:.88rem;color:#333;margin:2px 0 4px}
+.tri .full-sub{text-align:center;font-size:.9rem;margin:2px 0 4px}
+.tri .tri-items{display:block}
+.tri .tri-items .item{padding:6px 0}
+.tri .grid{max-width:none}
+.tri-box{background:#fafafa;border:1px solid #e3e3e3;border-radius:8px;padding:8px 12px;margin:10px 0}
+.tri-bt{font-size:1rem;margin:0 0 4px}
+.tri-hero{background:#1b1b1b;border-radius:10px;padding:12px;margin:0 0 14px;color:#fff;text-align:center}
+.tri-photo img{display:block;width:100%;height:auto;border-radius:6px;border:3px solid #c9a24a}
+.tri-h-big{font-size:1.5rem;margin:12px 0 8px}
+.tri-feat{background:#fff6f0;color:#1a1a1a;border:3px solid var(--red);border-radius:8px;padding:10px 12px}
+.tri-ft{font-family:Limelight,Georgia,serif;font-size:2rem;color:var(--red);margin:0;line-height:1.1}
+.tri-fd{margin:2px 0 6px;color:#444}
+.tri-fps{margin:0;display:flex;justify-content:center;gap:26px;flex-wrap:wrap;font-size:1.35rem;font-weight:800}
+.tri-fl{color:var(--green);font-size:.95rem}
+@media (min-width:1000px){
+ .tri{grid-template-columns:1fr 1.08fr 1fr;align-items:start}
+ .tri-l{order:1}.tri-c{order:2}.tri-r{order:3}
+ .tri-p{border:1px solid #e3e3e3;border-radius:8px;padding:12px}
+ .tri .tri-items .item{border-bottom:1px dotted #ccc}
+}
+
+@media (min-width:980px){.grid4.n2{grid-template-columns:1fr 1fr}}  /* (Sam, 2026-11-01) two "Famous for" cards while photo cards are hidden */
